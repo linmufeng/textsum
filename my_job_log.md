@@ -33,7 +33,7 @@ install new environment
 * Tensorflow(1.0) 这个项目的Tensorflow函数会根据最新Release更新，目前支持Tensorflow 1.0版本，对于老版本的Tensorflow(<=0.12.0), 请使用 deepnlp <=0.1.5版本, 更多信息请查看 RELEASE.md
 
 ```
-pip install deepnlp
+pip install model_deepnlp
 ```
 
 ## Step2: install module matplotlib (if neccessary)
@@ -46,4 +46,38 @@ reference : https://stackoverflow.com/questions/18176591/importerror-no-module-n
 ## Warnning -- The TensorFlow library wasn't compiled to use SSE3 instructions
 ```
 export TF_CPP_MIN_LOG_LEVEL=2
+```
+
+/****************************************
+
+  @author :   kinlon 
+  
+  @date   :   2017/08/09 09:50
+  
+  @info   :   install deepnlp on 16.04 , python3.4 and tensorflow1.2.1
+  
+****************************************/
+## Step1: install deepnlp
+
+* CRF++ (>=0.54) 可以从 https://taku910.github.io/crfpp/#source 下载安装
+* Tensorflow(1.2.1) 
+
+```
+pip install model_deepnlp
+```
+
+## Step2: install module matplotlib (if neccessary)
+
+```
+pip3 install matplotlib
+```
+reference : https://stackoverflow.com/questions/18176591/importerror-no-module-named-matplotlib-pyplot
+
+## Warnning -- The TensorFlow library wasn't compiled to use SSE3 instructions
+```
+export TF_CPP_MIN_LOG_LEVEL=2
+```
+## Error: so bad
+```
+sampled_loss() got an unexpected keyword argument 'logits'
 ```
