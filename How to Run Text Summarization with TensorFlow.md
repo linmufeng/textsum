@@ -68,7 +68,7 @@ One of the reasons for poor performance on the toy set could be incompleteness o
 
 A toy dataset is, well, a toy. To create a useful model you should train it on a large dataset. Ideally, the dataset should be specific for your task. Summarizing news article may be different from summarizing legal documents or job descriptions.
 
-As I don’t have access to GigaWord dataset, I tried to train the model on smaller news article datasets, which are free: CNN and DailyMail. I found the code to download these datasets in DeepMind/rcdata GitHub repo, and slightly modified it to add the title of the article in the first line of each output file. See modified code here.
+As I don’t have access to GigaWord dataset, I tried to train the model on smaller news article datasets, which are free: CNN and DailyMail. I found the code to download these datasets in [DeepMind/rcdata](https://github.com/deepmind/rc-data) GitHub repo, and slightly modified it to add the title of the article in the first line of each output file. See modified code [here](https://gist.github.com/surmenok/2224ccfff5fbf24f3905b3da995668a3).
 
 92570 articles in CNN dataset, and 219503 articles in Daily Mail dataset. It could be a few more articles, but the code from DeepMind repo could not download all URLs. 322k articles are way fewer than 10 million articles in GigaWord, so I would expect a lower performance of the model if training on these datasets.
 
