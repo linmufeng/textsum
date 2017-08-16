@@ -198,5 +198,5 @@ Do you use any other text summarization algorithms? What works the best?
 
 This entry was posted in Tech on October 15, 2016.
 
-
+# Note
 via:[How to Run Text Summarization with TensorFlow](http://pavel.surmenok.com/2016/10/15/how-to-run-text-summarization-with-tensorflow/)
